@@ -13,7 +13,7 @@ const renderModule = (step: STEPS) => {
     case STEPS.PLAY:
       return <PlayModule />
     case STEPS.GAME_OVER:
-      return <GameOverModule/>
+      return <GameOverModule />
     default:
       return null
   }
@@ -22,13 +22,15 @@ const renderModule = (step: STEPS) => {
 function App() {
   const step = useGameStor(state => state.step);
   const module = useMemo(() => renderModule(step), [step]);
-  
+
 
   return (
     <>
-      <h1 className='text-center text-5xl font-bold pt-12'>Juego Piedra,Papel o Tijera</h1>
-      <Score/>
-      {module}
+      <div className='box-border bg-green-600 h-lvh pt-20'>
+      <h1 className='bg-green-600 text-center text-5xl font-bold pb-12 font-serif'>Juego Piedra,Papel o Tijera</h1>
+        {module}
+        <Score  />
+      </div>
     </>
   )
 }

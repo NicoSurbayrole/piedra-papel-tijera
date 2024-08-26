@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({ status }) => {
         }
     }
     return (
-        <button className="bg-gray-400 hover:bg-gray-600 rounded-lg w-40 py-3 text-xl m-auto text-white block" onClick={onClick}>Continuar</button>
+        <button className="bg-green-400 border-black border-2 hover:bg-slate-200 text-black  rounded-lg w-40 py-3 text-xl m-auto  block font-serif" onClick={onClick}>Continuar</button>
     )
 }
 
