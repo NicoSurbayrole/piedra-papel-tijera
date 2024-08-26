@@ -30,11 +30,11 @@ const PlayModule = () => {
         <>
             <Result status={status} />
             <div className="flex justify-around">
-                <div className="flex flex-col align-center">
-                    <span className="text-3xl text-center pb-5">Jugador</span>
+                <div className="flex flex-col align-center pointer-events-none">
+                    <span className="text-3xl text-center pb-5 ">Jugador</span>
                     <Choice choice={choice} />
                 </div>
-                <div className="flex flex-col align-center">
+                <div className="flex flex-col align-center pointer-events-none">
                     <span className="text-3xl text-center pb-5">CPU</span>
                     <Choice choice={cpuAnswer} />
                 </div>
