@@ -14,7 +14,7 @@ const SelectionModule = () => {
 
 
     return (
-        <div className="flex row justify-around">
+        <div className="flex row justify-around max-sm:block text-center">
             {ANSWERS.map((answers) => <Choice key={answers} choice={answers} onClick={onClickChoice} />)}
         </div>
     )
