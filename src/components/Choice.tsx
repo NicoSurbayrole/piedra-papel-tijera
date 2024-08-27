@@ -12,7 +12,7 @@ const Choice = ({choice,onClick}:ChoiceProops) =>{
     return(
         <div className="rounded-full text-9xl border-black border-2">
             <button className="bg-green-400  shadow-black hover:bg-slate-200 rounded-full shadow-lg h-48 w-48" onClick={onClickChoice}>
-                {choice ?? "🤔"}
+                {choice ?? "❔"}
             </button>
         </div>
     )
