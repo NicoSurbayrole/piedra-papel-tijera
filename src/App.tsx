@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <div className='box-border bg-green-600 h-lvh pt-20'>
-      <h1 className='bg-green-600 text-center text-5xl font-bold pb-12 font-serif max-sm:text-4xl'>Juego Piedra,Papel o Tijera</h1>
+      <h1 className='bg-green-600 text-center text-5xl font-bold pb-12 font-serif max-sm:pb-0 max-sm:text-3xl'>Juego Piedra,Papel o Tijera</h1>
         {module}
         <Score  />
       </div>
